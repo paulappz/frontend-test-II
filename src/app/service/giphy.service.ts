@@ -1,9 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GiphyService {
+  private giphy_api_key = environment.giphy_api_key;
+  private giphy_api_url = environment.giphy_api_url;
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
+  public getGiphyGif (searchterm) {
+    return this.http.get(`${this.giphy_api_url}?api_key=${this.giphy_api_key}&s=${searchterm}`);
+  }
+
 }
