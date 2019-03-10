@@ -1,33 +1,76 @@
-## Front-end Developer Test
-
-### Devcenter Frontend Developer Test II
-
-The purpose of this test is not only to quickly gauge an applicant's abilities with working with APIs, but also their approach to development.
-
-Applicants may use whatever frontend techniques they want to achieve the outcome.
+## Using the Giphy API
 
 ## Task
 
-* Using the Spotify API https://developer.spotify.com/web-api/ - Given any particular artist, get their first 10 related artists and list their similar top songs.
-
 * Using the Giphy API https://developers.giphy.com/docs/ - Write a chat input that takes a command, converts the ensuing string into a gif (Like in Slack) and adds it to the conversation
 
-## How to complete the task
+## To Run
 
-1. Fork this repository into your own public repo.
+* [Download the installer](https://nodejs.org/) for Node.js 6 or greater.
+* Install the angular CLI globally: `npm install -g angular@latest`
+* Clone this repository: `https://github.com/paulappz/frontend-test-II.git`.
+* Run `npm install` from the project root.
+* Run `ng serve -o` in a terminal from the project root.
 
-2. Complete the project and commit your work. Send the URL of your own repository to @seun on the Slack here bit.ly/dcs-slack.
+## App Preview
+  <img src="giphy-api-app.png" alt="preview-giphy">
 
-## Show your working
+## File Structure of App
 
-If you choose to use build tools to compile your CSS and Javascript (such as SASS of Coffescript) please include the original files as well. You may update this README file outlining the details of what tools you have used.
+```
+ionic-conference-app/
+├-- .github/                            * GitHub files
+│   ├── CONTRIBUTING.md                 * Documentation on contributing to this repo
+│   └── ISSUE_TEMPLATE.md               * Template used to populate issues in this repo
+|
+|-- e2e/
+|    |--scr/
+|    |    ├── app.e2e-spec.ts
+|    |    └── app.po.ts
+|    |-- protractor.conf.js
+|    |-- tsconfig.e2e.json
+|-- src/
+|    |-- app/
+|    |    ├── app.component.css
+|    |    └── app.component.html
+|    |    └── app.component.spec.ts
+|    |    └── app.component.ts
+|    |    └── app.module.ts
+|    |    └──service/
+|    |          ├──giphy.service.spec.ts
+|    |          └── giphy.service.ts
+|    |    
+│    ├── assets/.gitkeep                     * ---
+│    ├── environments/                       * env folder
+|    |     ├── environment.prod.ts           * env production file
+|    |     ├── environment.ts                * env non production file
 
-## Clean code
+Type	Name	Latest commit message	Commit time
+..		
+	getting started @paulappz	13 hours ago
+environment.ts
 
-This fictitious project is part of a larger plan to reuse templates for multiple properties. When authoring your CSS ensure that it is easy for another developer to find and change things such as fonts and colours.
-
-
-## Good luck!
-
-We look forward to seeing what you can do. Remember, although it is a test, there are no specific right or wrong answers that we are looking for - just do the job as best you can. Any questions - create an issue in the panel on the right (requires a Github account).
+|    |
+|    |-- browserslist
+|    |-- favicon.ico
+|    |-- index.html
+|    |-- karma.conf.js
+|    |-- main.ts
+|    |-- polyfills.ts
+|    |-- styles.css
+|    |-- test.ts
+|    |-- tsconfig.app.json
+|    |-- tsconfig.spec.json
+|    |-- tslint.json
+|    |
+|    |
+|    |
+├── .editorconfig                       * Defines coding styles between editors
+├── .gitignore                          * Example git ignore file
+├── README.md                           * This file
+├── angular.json                        * Angular configuration file
+├── package-lock.json.                  * Defines our JavaScript dependencies
+├── package.json                        * Defines our JavaScript dependencies
+├── tsconfig.json                       * Defines the root files and the compiler options
+├── tslint.json                         * Defines the rules for the TypeScript linter
 
