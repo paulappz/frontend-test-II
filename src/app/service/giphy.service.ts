@@ -3,9 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GiphyService {
   private giphy_api_key = environment.giphy_api_key;
   private giphy_api_url = environment.giphy_api_url;
